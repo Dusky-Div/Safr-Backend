@@ -10,6 +10,7 @@ import Password from "./routes/password.routes";
 import BankAccount from "./routes/bankAccount.routes";
 import ApiKey from "./routes/apiKey.routes";
 import SecureNote from "./routes/secureNote.routes";
+import Data from "./routes/data.routes";
 
 const app = express();
 const PORT = process.env.PORT;
@@ -25,6 +26,7 @@ app.use(express.json());
 
 //Routes
 app.use("/", users);
+app.use("/api", Data);
 app.use("/api", CreditCard);
 app.use("/api", Password);
 app.use("/api", BankAccount);

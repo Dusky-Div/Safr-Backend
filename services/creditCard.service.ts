@@ -33,7 +33,7 @@ export const handleSaveCreditCard = async (body: CreditCardRequestBody) => {
 
   const newCreditCardDetails = new CreditCardDetails({
     firebaseUID,
-    type: entryType,
+    entryType,
     displayData: {
       cardName,
       cardHolderName,

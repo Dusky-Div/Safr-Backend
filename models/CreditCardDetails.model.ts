@@ -3,7 +3,7 @@ import mongoose, { Schema } from "mongoose";
 const CreditCardDetailsSchema = new Schema(
   {
     firebaseUID: { type: String, index: true, required: true },
-    type: { type: String, required: true },
+    entryType: { type: String, required: true },
 
     displayData: {
       cardName: { type: String, required: true },
